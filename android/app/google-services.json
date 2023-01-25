@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "443267102384",
+    "project_id": "newfirebase-360ae",
+    "storage_bucket": "newfirebase-360ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443267102384:android:c9a6ff6bdeaeb53012ed75",
+        "android_client_info": {
+          "package_name": "com.example.ghayrat_new_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443267102384-3ejq0gsv7gtdoeif0apok09use3a2dq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUgk8A3MkZeVEwkriOpm0-uwpypC5y0-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443267102384-3ejq0gsv7gtdoeif0apok09use3a2dq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
