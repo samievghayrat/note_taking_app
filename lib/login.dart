@@ -125,8 +125,7 @@ class _LoginWidgetState extends State<LoginWidget> {
           ),
           RichText(
             text: TextSpan(
-                recognizer: TapGestureRecognizer()
-                  ..onTap = widget.onClickedSignUp as GestureTapCallback?,
+
                 style: TextStyle(
                     color: Colors.black45,
                     fontSize: 18,
@@ -134,6 +133,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                 text: 'No Account?  ',
                 children: [
                   TextSpan(
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = widget.onClickedSignUp as GestureTapCallback?,
                       text: 'Sign Up',
                       style: TextStyle(
                           decoration: TextDecoration.underline,

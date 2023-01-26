@@ -33,12 +33,12 @@ class _SignUpWidgetState extends State<SignUpWidget> {
       final isValid = formKey.currentState!.validate();
       if (!isValid) return;
 
-      showDialog(barrierDismissible: false,
-        context: context,
-        builder: (context) => const Center(
-          child: CircularProgressIndicator(),
-        ),
-      );
+      // showDialog(barrierDismissible: false,
+      //   context: context,
+      //   builder: (context) => const Center(
+      //     child: CircularProgressIndicator(),
+      //   ),
+      // );
 
       try {
         await FirebaseAuth.instance.createUserWithEmailAndPassword(
@@ -61,9 +61,9 @@ class _SignUpWidgetState extends State<SignUpWidget> {
             SizedBox(
               height: 60,
             ),
-            FlutterLogo(
-              size: 120,
-            ),
+            // FlutterLogo(
+            //   size: 120,
+            // ),
             Text(
               "Hey There\n Welcome back",
               textAlign: TextAlign.center,
@@ -118,8 +118,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
             ),
             RichText(
               text: TextSpan(
-                  recognizer: TapGestureRecognizer()
-                    ..onTap = widget.onClickedSignUp as GestureTapCallback?,
+
                   style: const TextStyle(
                       color: Colors.black45,
                       fontSize: 18,
@@ -127,6 +126,8 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                   text: 'Already have an account?  ',
                   children: [
                     TextSpan(
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = widget.onClickedSignUp as GestureTapCallback?,
                         text: 'Login ',
                         style: TextStyle(
                             decoration: TextDecoration.underline,
